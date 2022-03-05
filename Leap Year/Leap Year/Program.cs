@@ -1,15 +1,16 @@
 ﻿
 
 Console.WriteLine("Enter a year:");
-
 int year = int.Parse(Console.ReadLine());
-if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+
+// Using DateTime Function
+if (DateTime.IsLeapYear(year))
 {
-    Console.WriteLine(year + "is a leap Year ");
+    Console.WriteLine(year + " is a a leap year");
 }
 else
 {
-    Console.WriteLine("{0} is not a leap Year ", year);
+    Console.WriteLine("{0} is not a leap year", year);
 }
 
 
